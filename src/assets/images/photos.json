@@ -1,0 +1,22 @@
+{
+    "data":[      
+		{
+            "previewImageSrc": "assets/images/project1.jpg",
+            "thumbnailImageSrc": "assets/images/project1.jpg",
+            "alt": ".Net core is used as the Backend which provides the api,Prime NG components is used to deveolp the rich UI in Angular, SQL server is used as the Database where code first approach is followed",
+            "title": "Project 1"
+        },
+		{
+            "previewImageSrc": "assets/images/project2.jpg",
+            "thumbnailImageSrc": "assets/images/project2.jpg",
+            "alt": ".Net 6 is used as the Backend which provides the api,Angular Material is used to create the UI, SQL server is used as the Database where code first approach is followed",
+            "title": "Project 2"
+        },		
+		{
+            "previewImageSrc": "assets/images/project3.jpg",
+            "thumbnailImageSrc": "assets/images/project3.jpg",
+            "alt": ".Net framework is used as the Backend which provides the api, consumed by Angular in the UI, Oracle is used for the Database Connection",
+            "title": "Project 3"
+        }
+    ]
+}

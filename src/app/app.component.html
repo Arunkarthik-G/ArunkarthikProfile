@@ -1,0 +1,97 @@
+<div class="header">
+  <p class="para justify-content-center  align-items-center">Hi, Arunkarthik here</p> 
+  <details>
+    <summary></summary>
+    <nav class="menu">
+            <a href="#my">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+           
+     </nav>                            
+  </details>
+
+  <!-- <div class="curtain"></div>  -->
+<!-- <div class="curtain">
+</div> -->
+
+<div class="row">
+  <div class="col-3 col-s-4">
+  
+    <div class="flex flex-column justify-content-center card-container green-container gap-0">                 
+      <div class="dark !important border-round w-20rem h-4rem bg-green-500 text-white font-bold flex align-items-center justify-content-center">HTML/CSS</div>
+      <div class="dark !important border-round w-20rem h-4rem bg-green-500 text-white font-bold flex align-items-center justify-content-center">Angular 13</div>
+      <div class="dark !important border-round w-20rem h-4rem bg-green-500 text-white font-bold flex align-items-center justify-content-center">C# .NET 6.0</div>
+      <div class="dark !important border-round w-20rem h-4rem bg-green-500 text-white font-bold flex align-items-center justify-content-center">.Net Framework</div>   
+      <div class="dark !important border-round w-20rem h-4rem bg-green-500 text-white font-bold flex align-items-center justify-content-center">SQL</div>     
+      <div class="dark !important border-round w-20rem h-4rem flex align-items-center justify-content-center">      
+        <p class="para justify-content-center  align-items-center">TechStack</p> 
+      </div>
+     </div>    
+  </div>
+
+  <div class="col-6 col-s-9" id="my">
+    <p-card class="pcard" header="Arunkarthik G" subheader="Full Stack Developer" styleClass="p-card-shadow">             
+      <p class="highlightedText">
+       Working in BOSCH, Specialized in Microsoft .Net Technologies, 
+       Providing Tooling Solutions in Continuous Testing Domain,
+       Currently Developing Web based Solutions to meet Client expectations,            
+       Implementing CleanArchitecture Design using .Net 6,
+       Design and Develop Modules in <b>Reusable and Maintainable way</b>,
+       Developed Desktop applications,
+       Configured Jobs in Jenkins and <b>CC.Net for CI/CD, </b>
+       Working with Source Control GIT,SVN,Bitbucket,
+       Writing unit tests in Xunit and Jasmine with dependency mocking,                                            
+       Current Tech Stack
+      <b>.NET,C#,Angular,HTML, CSS, SQL or NOSQL</b>
+      </p>
+  </p-card>
+  </div>
+
+  <div class="col-3 col-s-12 pcard">
+    <p-card >               
+      <p-image src="assets/images/myimage.jpg" alt="Image" width="264px"></p-image>          
+    </p-card>   
+  </div>
+
+
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3" id="contact">
+    <p-card class="pcard" header="Contact"  styleClass="p-card-shadow"> 
+      <p class="highlightedText1">
+       Phone No:+91 9489246093
+       Email:garunkarthik92@gmail.com
+
+      </p>
+    </p-card>
+  </div>
+  <div class="col-6 col-s-9" id="projects">
+    <p class="para justify-content-center  align-items-center">Projects</p> 
+    <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '950px'}" [numVisible]="5"
+    [circular]="true" [showItemNavigators]="true">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+    </ng-template>
+    <!-- <ng-template pTemplate="thumbnail" let-item>
+      <div class="grid grid-nogutter justify-content-center">
+          <img [src]="item.thumbnailImageSrc" style="display: block;" />
+      </div>
+  </ng-template> -->
+  <ng-template pTemplate="caption" let-item>
+      <h3 style="margin-bottom: .5rem; color: #ffffff;">{{item.title}}</h3>
+      <p class="highlightedText1">{{item.alt}}</p>
+  </ng-template>
+  
+</p-galleria>
+  </div>
+  <div class="col-3 col-s-12" id="experience">
+    <p class="para justify-content-center  align-items-center">Experience</p> 
+  <p-chart type="doughnut" [data]="data" [options]="chartOptions" [style]="{'width': '40%'}"></p-chart>
+  </div>
+</div>
+
+<div class="footer">
+  <p>@Copyight ArunkarthikG</p>
+</div>
